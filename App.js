@@ -48,9 +48,11 @@ const pConversor = (respuesta,selectedValue) => {
   else if(selectedValue === "6"){
     respuesta = respuesta / 100000;
   }
+  if(!respuesta){
+    respuesta = '';
+  }
   return respuesta
 }
-
 
 const styles = StyleSheet.create({
   container: {
